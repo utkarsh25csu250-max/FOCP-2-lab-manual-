@@ -1,23 +1,26 @@
 #include<iostream>
-#include<math.h>
 using namespace std;
 int main(){
-     double P, R, T, A, CI;
-
-    cout<<"Enter Principal: ";
-    cin>>P;
-
-    cout<<"Enter Rate of Interest: ";
-    cin>>R;
-
-    cout<<"Enter Time (years): ";
-    cin>>T;
-
-    A = P * pow((1 + R/100), T);
-    CI = A - P;
-
-    cout<<"Compound Interest: "<<CI<<endl;
-    cout<<"Maturity Amount: "<<A<<endl;
-
+    int a,b,c;
+    cout<<"enter side1:";
+    cin>>a;
+    cout<<"enter side2:";
+    cin>>b;
+    cout<<"enter side3:";
+    cin>>c;
+    if(a+b>c && a+c>b && b+c>a){
+        if(a==b && b==c){
+            cout<<"equilateral";
+        }
+        else if(a==b || a==c || b==c){
+            cout<<"isosceles";
+        }
+        else{
+            cout<<"scalene";
+        }
+    }
+    else{
+        cout<<"not a valid triangle";
+    }
     return 0;
 }

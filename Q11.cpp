@@ -1,16 +1,20 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int employe,basic_salary;
-     cout<<"enter employee num:";
-    cin>>employe;
-    cout<<"enter salary /employee:";
-    cin>>basic_salary;
-
-    float bonus=basic_salary*0.12;
-    float net_salary=employe*basic_salary;
-    
-    cout<<"bonus /employee:"<<bonus<<"\n";
-    cout<<"net_salary:"<<net_salary;
+    int order,price_order;
+    float total,discount;
+    cout<<"enter number of orders:";
+    cin>>order;
+    cout<<"price per order:";
+    cin>>price_order;
+    total=order*price_order;
+    if(order>1000){
+        discount=total*0.10;
+        total=total-discount;
+        cout<<"amt(10% disc):"<<total;
+    }
+    else{
+        cout<<"amt:"<<total;
+    }
     return 0;
 }

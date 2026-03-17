@@ -1,10 +1,10 @@
 #include<iostream>
 using namespace std;
 int main(){
-    float r;
-    cout<<"enter radius:";
-    cin>>r;
-    float area=3.14*r*r;
-    cout<<"area:"<<area;
+    int farhrenhiet;
+    cout<<"enter temp(farheniet):"<<"\n";
+    cin>>farhrenhiet;
+    float celsius=(farhrenhiet=32)*5/9;
+    cout<<"temp(in celsius):"<<celsius;
     return 0;
 }

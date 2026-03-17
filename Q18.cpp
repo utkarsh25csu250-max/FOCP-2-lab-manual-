@@ -1,14 +1,20 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int year;
-    cout<<"enter year:";
-    cin>>year;
-    if((year%4==0 && year%100!=0)||(year%400==0)){
-        cout<<"leap year";
+    int n,orignal,remainder,reverse=0;
+    cout<<"enter num:";
+    cin>>n;
+    orignal=n;
+    while(n!=0){
+        remainder=n%10;
+        reverse=reverse*10+remainder;
+        n/=10;
+    }
+    if(orignal==reverse){
+        cout<<"palindrome";
     }
     else{
-         cout<<"non-leap year";
+        cout<<"not a palnindrome";
     }
     return 0;
 }

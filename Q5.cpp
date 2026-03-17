@@ -1,12 +1,24 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int base,height;
-    cout<<"enter base:";
-    cin>>base;
-    cout<<"enter height";
-    cin>>height;
-    float area=(base*height)/2;
-    cout<<"area:"<<area;
+    int a,b;
+    int temp;
+    cout<<"enter a:"<<"\n";
+    cin>>a;
+    cout<<"enter b:"<<"\n";
+    cin>>b; 
+    // temp=a;
+    // a=b;             method 1
+    // b=temp;
+      
+    // a=a+b;
+    // b=a-b;           method 2
+    // a=a-b;
+
+    // a=a*b;
+    // b=a/b;          method 3
+    // a=a/b;
+    cout<<"a:"<<a<<" ";
+    cout<<"b:"<<b;
     return 0;
 }

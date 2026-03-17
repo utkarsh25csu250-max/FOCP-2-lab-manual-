@@ -1,15 +1,21 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n;
-    cout<<"enter no of device:";
+    int n,num,max;
+    cout<<"enter number of entries:";
     cin>>n;
-    if(n%2==0){
-        cout<<"no of devices are on are even";
+    if(n<=0){
+        cout<<"not valid";
     }
-    else{
-        cout<<"no of devices are on are off";
-    }
+    cout<<"enter the first  number:";
+    cin>>max;
+    for(int i=2;i<=n;i++){
+        cout<<"enter number"<<i<<":";
+        cin>>num;
 
-    return 0;
+        if(num>max){
+        max=num;
+        }
+    }
+    cout<<"largest num:"<<max<<"\n";
 }
